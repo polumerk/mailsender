@@ -1,0 +1,16 @@
+variables:
+  SERVICE_NAME: 'mailsender'
+  DEPLOY_ENVIRONMENT:
+    options:
+      - uat
+      - prod
+      - dr
+      - default
+    value: default
+    description: "The deployment environment."
+  DEPLOY_GROUP: 'main'
+
+include:
+  - project: 'group/configuration'
+    ref: $CONFIGURATION_BRANCH
+    file: 'Pipeline/.shared-backend-pipeline.yml'

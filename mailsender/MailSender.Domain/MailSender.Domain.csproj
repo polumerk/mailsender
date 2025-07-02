@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<Import Project="..\Project.props" />
+
+	<ItemGroup>
+		<EmbeddedResource Update="Localization\CultureLoc.ru.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<PublicClass>True</PublicClass>
+			<StronglyTypedFileName>$(IntermediateOutputPath)\CultureLoc.Designer.cs</StronglyTypedFileName>
+			<StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+			<StronglyTypedNamespace>MailSender.Domain.Localization</StronglyTypedNamespace>
+			<StronglyTypedClassName>CultureLoc</StronglyTypedClassName>
+			<LastGenOutput>CultureLoc.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>1591</NoWarn>
+	</PropertyGroup>
+
+	<Target Name="_GenerateResxSource" BeforeTargets="BeforeCompile;CoreCompile" DependsOnTargets="PrepareResources">
+	</Target>
+
+	<ItemGroup>
+		<PackageReference Include="Dictionaries" Version="$(DictionaryVersion)" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+services:
+  SERVICE_NAME:
+    restart: unless-stopped
+    image: IMAGE_NAME
+    container_name: SERVICE_NAME
+    command: dotnet MailSender.API.dll
+    ports:
+      - '61792:5000'
+    environment:
+      ASPNETCORE_ENVIRONMENT: DEPLOY_ENVIRONMENT
+    logging:
+      driver: json-file
+      options:
+        max-file: "3"
+        max-size: 512m
+    volumes:
+      - /app/certs:/app/certs:ro
+      - /app/SERVICE_NAME/secrets.json:/app/secrets.json:ro
+      - /app/SERVICE_NAME/logs:/app/logs:rw
