@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.API", "MailSender.API\MailSender.API.csproj", "{B9866429-12CC-4D5E-9893-8E9C65E2DC92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.Infrastructure", "MailSender.Infrastructure\MailSender.Infrastructure.csproj", "{73CCCFE8-9A4E-440A-9262-55D5AD530D31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.Domain", "MailSender.Domain\MailSender.Domain.csproj", "{41284BB7-7544-48DE-8EAF-A8E269047297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.Application", "MailSender.Application\MailSender.Application.csproj", "{1851D302-6C46-4062-9489-B0B2B14AC70E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B9D9799-D10F-489C-95F7-03778F7B0BD5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+		Project.props = Project.props
+		docker-compose.yaml = docker-compose.yaml
+		Dockerfile = Dockerfile
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.IntegrationTests", "MailSender.IntegrationTests\MailSender.IntegrationTests.csproj", "{A6875A44-FDA7-48AA-B8FD-E1EE7D71926C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.TestConstants", "MailSender.TestConstants\MailSender.TestConstants.csproj", "{B3C69671-454F-4766-A671-D700359FB7CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.UnitTests", "MailSender.UnitTests\MailSender.UnitTests.csproj", "{654D8CBF-675C-42A8-BC9B-21D858043CD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.PostgreSql", "MailSender.PostgreSql\MailSender.PostgreSql.csproj", "{2BF90E3A-F9B5-4A8F-AB3F-BF9930C4BCA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailSender.SqlServer", "MailSender.SqlServer\MailSender.SqlServer.csproj", "{2FB8CA2C-5D78-48F7-859E-E7BD4963BAD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9866429-12CC-4D5E-9893-8E9C65E2DC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9866429-12CC-4D5E-9893-8E9C65E2DC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9866429-12CC-4D5E-9893-8E9C65E2DC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9866429-12CC-4D5E-9893-8E9C65E2DC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CCCFE8-9A4E-440A-9262-55D5AD530D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CCCFE8-9A4E-440A-9262-55D5AD530D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CCCFE8-9A4E-440A-9262-55D5AD530D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CCCFE8-9A4E-440A-9262-55D5AD530D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41284BB7-7544-48DE-8EAF-A8E269047297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41284BB7-7544-48DE-8EAF-A8E269047297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41284BB7-7544-48DE-8EAF-A8E269047297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41284BB7-7544-48DE-8EAF-A8E269047297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1851D302-6C46-4062-9489-B0B2B14AC70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1851D302-6C46-4062-9489-B0B2B14AC70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1851D302-6C46-4062-9489-B0B2B14AC70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1851D302-6C46-4062-9489-B0B2B14AC70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6875A44-FDA7-48AA-B8FD-E1EE7D71926C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6875A44-FDA7-48AA-B8FD-E1EE7D71926C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6875A44-FDA7-48AA-B8FD-E1EE7D71926C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6875A44-FDA7-48AA-B8FD-E1EE7D71926C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C69671-454F-4766-A671-D700359FB7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C69671-454F-4766-A671-D700359FB7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C69671-454F-4766-A671-D700359FB7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C69671-454F-4766-A671-D700359FB7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654D8CBF-675C-42A8-BC9B-21D858043CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654D8CBF-675C-42A8-BC9B-21D858043CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654D8CBF-675C-42A8-BC9B-21D858043CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654D8CBF-675C-42A8-BC9B-21D858043CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF90E3A-F9B5-4A8F-AB3F-BF9930C4BCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF90E3A-F9B5-4A8F-AB3F-BF9930C4BCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF90E3A-F9B5-4A8F-AB3F-BF9930C4BCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF90E3A-F9B5-4A8F-AB3F-BF9930C4BCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB8CA2C-5D78-48F7-859E-E7BD4963BAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB8CA2C-5D78-48F7-859E-E7BD4963BAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB8CA2C-5D78-48F7-859E-E7BD4963BAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB8CA2C-5D78-48F7-859E-E7BD4963BAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DF16E34-98D1-4665-94A8-A375898DBBE9}
+	EndGlobalSection
+EndGlobal

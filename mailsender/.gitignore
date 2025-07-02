@@ -1,0 +1,8 @@
+bin
+obj
+packages
+logs
+.vs
+*.user
+*.dbmdl
+*.jfm
